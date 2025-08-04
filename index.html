@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТочкаСхода — Знакомства</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="screen active" id="mainScreen">
+            <div class="logo-container">
+                <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path class="logo-path" d="M20,50 Q35,20 50,50 T80,50" 
+                          stroke="#D7303B" 
+                          stroke-width="8" 
+                          fill="none"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+            <h1 class="app-title">ТочкаСхода</h1>
+            <p class="app-subtitle">Место, где пересекаются ваши пути</p>
+            <button class="btn pulse" id="startBtn">Начать знакомства</button>
+        </div>
+
+        <div class="screen" id="registrationForm"></div>
+
+        <div class="screen" id="profileView">
+            <div class="profile-card">
+                <div class="profile-avatar" id="profileAvatar">
+                    <div class="avatar-placeholder">👤</div>
+                </div>
+                <h1 class="profile-name" id="profileName"></h1>
+                <div class="profile-age-city" id="profileAgeCity"></div>
+                <div class="profile-description" id="profileDescription"></div>
+                
+                <h3>Мои интересы</h3>
+                <div class="profile-interests" id="profileInterests"></div>
+                
+                <h3>Мой цвет настроения</h3>
+                <div class="color-option" id="profileMood" style="margin: 0 auto;"></div>
+                
+                <div class="profile-actions">
+                    <button class="btn" id="editBtn">Редактировать профиль</button>
+                    <button class="btn btn-secondary" id="newProfileBtn">Создать новый профиль</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/components/ui.js"></script>
+    <script src="assets/js/components/form.js"></script>
+    <script src="assets/js/components/profile.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
